@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RUCHU Please Fill This</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #fff0f5, #ffe6f0);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 0, 102, 0.3);
+      width: 90%;
+      max-width: 450px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #e6005c;
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      color: #cc0066;
+      text-align: left;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 2px solid #ffcce0;
+      border-radius: 10px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #ff3385;
+      color: white;
+      padding: 12px 20px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 12px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #cc0066;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #b30047;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Tirth Ko Time Kab Dogi?</h2>
+
+    <form action="https://formsubmit.co/kapateltirth209@gmail.com" method="POST">
+
+      <!-- Disable CAPTCHA -->
+      <input type="hidden" name="_captcha" value="false" />
+
+      <label for="name">Aapka Naam</label>
+      <input type="text" name="name" id="name" placeholder="RUCHU" required />
+
+      <label for="date">Kaunsi Date Pe Time Dogi?</label>
+      <input type="date" name="date" id="date" required />
+
+      <label for="time">Kaunsa Time Best Lagega?</label>
+      <select name="time" id="time" required>
+        <option value="">-- Select Time --</option>
+        <option>Morning (9–10 AM)</option>
+        <option>Noon (1–2 PM)</option>
+        <option>Evening (5–6 PM)</option>
+        <option>Night (8–9 PM)</option>
+      </select>
+
+      <label for="mood">Mood Kaisa Hai?</label>
+      <select name="mood" id="mood">
+        <option>Pyaar bhara</option>
+        <option>Thoda busy hoon</option>
+        <option>Chill karna hai</option>
+        <option>Tumse milne ka mann hai</option>
+      </select>
+
+      <label for="note">Kuch Kehna Chahti Ho?</label>
+      <textarea name="note" id="note" rows="3" placeholder="Jo dil mein ho likh do..."></textarea>
+
+      <button type="submit">Tirth Ko Time Do</button>
+    </form>
+
+    <div class="footer">
+      Tirth tumhara intezaar karega — jitna bhi waqt lage!
+    </div>
+  </div>
+</body>
+</html>
